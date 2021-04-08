@@ -12,7 +12,7 @@ for line in han:
 #    if len(words) < 3 :
 #        continue
 # the above gp was combined to the below statement
-    if len(words) < 3 or words[0] != 'From' :
+    if len(words) < 3 and words[0] != 'From' :
 #        print('ignore')
         continue
     print(words[2])
