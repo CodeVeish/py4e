@@ -15,6 +15,3 @@ for line in handle :
     dictionary[days] = dictionary.get(days,0) +1
 
 print(dictionary)
-
-
-
