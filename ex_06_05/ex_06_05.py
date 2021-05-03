@@ -1,12 +1,12 @@
 #this is the work I did myself
 text = "X-DSPAM-Confidence:    0.8475"
 ltext = text.find(':')
-#print(ltext)
+print(ltext)
 rtext = len(text)
-#print(rtext)
+print(rtext)
 target = text[ltext + 1 : rtext]
 target = target.strip()
-#print(target)
+print(target)
 f_target = float(target)
 print(f_target)
 
