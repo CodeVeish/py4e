@@ -12,5 +12,9 @@ for line in handle :
         count = count + 1
         dictionary[word] = count
             
-print(dictionary)
-
+#print(dictionary)
+usercheck = input('What word would you like to find? ')
+if usercheck in dictionary :
+    print(usercheck,dictionary[usercheck])
+else :
+    print('Value Not Found')
