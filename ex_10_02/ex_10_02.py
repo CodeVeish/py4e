@@ -9,7 +9,11 @@ for line in handle :
     if line.startswith('From ') :
         words = line.split()
         time = words[5]
+        #print(time)
+    else: 
+        continue
     timesp = time.split(':')
+    #print(timesp)
     hour = timesp[0]
     #print(hour)
     hourc[hour] = hourc.get(hour,0) + 1
