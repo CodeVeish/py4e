@@ -5,6 +5,7 @@
 # Compare your results with the tables at https://wikipedia.org/wiki/Letter_frequencies.
 handle = open('clown.txt')
 for line in handle :
+    line = line.lower()
     line = line.replace(" ","")
     #print(line)
     print(list(line))
