@@ -1,7 +1,12 @@
+import re
 handle = open('mbox.txt')
+inp = input('Enter RegEx: ')
+count = 0
+
 
 for line in handle :
     line = line.rstrip()
-    for word in line :
-        word = line.split()
-    print(word)
+    if re.search(inp,line):
+        count = count + 1
+
+print(count)
